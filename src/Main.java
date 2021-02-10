@@ -52,7 +52,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //System.out.println(calculateEqualation( 2.5f,3.5f,4.5f,5.5f));
+
         // System.out.println(isSumFrom10To20( 2,7));
         //isNumberPositiveOrNegative (0);
         //System.out.println(isNumberPositiveOrNegativeBoolean(0));
