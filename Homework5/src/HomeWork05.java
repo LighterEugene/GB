@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /* Необходимо написать два метода, которые делают следующее:
 
-1) Создают одномерный длинный массив, например:
+1) Создают одномерный длинный массив:
 
 2) Заполняют этот массив единицами;
 
@@ -20,17 +20,14 @@ arr[i] = (float)(arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math
 
 */
 public class HomeWork05 {
-    private static final int size = 10000000;
-    private static final int h = size / 2;
-    private static float[] arr = new float[size];
-
     public static void main(String[] args) {
-        singleThread(arr);
-        multiThread(arr);
-
+        singleThread();
+        multiThread();
     }
 
-    private static void singleThread(float[] arr) { // метод для одной нити
+    private static void singleThread() { // метод для одной нити
+          final int size = 10000000;
+          float[] arr = new float[size];
         Arrays.fill(arr, 1); // заполнение массива единицами
 
         long start = System.currentTimeMillis(); //точка отсчета времени начала выполнения задания
@@ -43,7 +40,10 @@ public class HomeWork05 {
         System.out.printf("Время выполнения при однопоточных вычислениях: %d%n", singleTime);
     }
 
-    private static void multiThread(float[] arr) {
+    private static void multiThread() {
+        final int size = 10000000;
+        final int h = size / 2;
+        float[] arr = new float[size];
         float[] a = new float[h];
         float[] b = new float[h];
 
