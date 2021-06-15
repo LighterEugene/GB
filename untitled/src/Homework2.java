@@ -1,7 +1,7 @@
 
 public class Homework2 {
 
-        public static void main(String[] args) {
+        public static void main(String[] args) {//
             String[][] arr = {
                     {"8", "5", "4", "2"},
                     {"7", "4", "2", "9"},
