@@ -4,8 +4,8 @@ import obstacles.*;
 public class MainClass {
     public static void main(String[] args) {
 
-        Competitor[] competitors = {new Human("Боб"), new Cat("Барсик"), new Dog("Бобик")};
-        Obstacle[] obstacles = {new Cross(400), new Wall(2), new Water(1)};
+        Competitor[] competitors = {new Human("Боб",2000,1.5f,500,true), new Cat("Барсик"), new Dog("Бобик")};
+        Obstacle[] obstacles = {new Cross(400), new Wall(1), new Water(1)};
 
         Team team = new Team("Победители", competitors);
 

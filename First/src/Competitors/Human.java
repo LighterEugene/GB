@@ -3,7 +3,7 @@ package Competitors;
 public class Human implements Competitor{
     String name;
     int maxRunDistance;
-    int maxJumpHeight;
+    float maxJumpHeight;
     int maxSwimDistance;
     boolean onDistance;
 
@@ -14,14 +14,22 @@ public class Human implements Competitor{
     public Human(String name) {
         this.name = name;
         this.maxRunDistance = 5000;
-        this.maxJumpHeight = 20;
+        this.maxJumpHeight = 2.0F;
         this.maxSwimDistance = 500;
         this.onDistance = true;
     }
 
+    public Human(String name, int maxRunDistance, float maxJumpHeight, int maxSwimDistance, boolean onDistance) {
+        this.name = name;
+        this.maxRunDistance = maxRunDistance;
+        this.maxJumpHeight = maxJumpHeight;
+        this.maxSwimDistance = maxSwimDistance;
+        this.onDistance = true;
+    }
+
     public void run(int distance){
-        if (distance <=maxRunDistance){
-            System.out.println(name + " " + " успешно справился с кросс");
+        if (maxRunDistance >= distance ){
+            System.out.println(name + " " + " успешно справился с кроссом");
         } else {
             System.out.println(name + " " + " не смог преодолеть кросс");
             onDistance = false;
@@ -29,7 +37,7 @@ public class Human implements Competitor{
     }
 
     public void jump(int height){
-        if (height <=maxJumpHeight){
+        if (maxJumpHeight >= height ){
             System.out.println(name + " " + " успешно справился с препятствием");
         } else {
             System.out.println(name + " " + " не смог преодолеть препятствие");
@@ -38,7 +46,7 @@ public class Human implements Competitor{
     }
 
     public void swim(int distance){
-        if (distance <=maxSwimDistance){
+        if (maxSwimDistance >= distance ){
             System.out.println(name + " " + " успешно проплыл дистанцию");
         } else {
             System.out.println(name + " " + " не смог проплыть дистанцию");
