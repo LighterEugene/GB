@@ -26,8 +26,8 @@ public class HomeWork05 {
     }
 
     private static void singleThread() { // метод для одной нити
-          final int size = 10000000;
-          float[] arr = new float[size];
+        final int size = 10000000;
+        float[] arr = new float[size];
         Arrays.fill(arr, 1); // заполнение массива единицами
 
         long start = System.currentTimeMillis(); //точка отсчета времени начала выполнения задания
@@ -96,7 +96,7 @@ class MyThread extends Thread {
         super(name);
         this.arr = arr;
     }
-// геттер для приватного массива
+    // геттер для приватного массива
     float[] getArr() {
 
         return arr;
