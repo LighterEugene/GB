@@ -6,7 +6,7 @@ import java.io.*;
 
 
 class HW4Lesson extends JFrame implements ActionListener {
-    ArrayList ва;
+
 
     final String TITLE_OF_PROGRAM = "Чат"; // текст титульника программы
     final int WINDOW_WIDTH = 350;  // параметры ширины окна
