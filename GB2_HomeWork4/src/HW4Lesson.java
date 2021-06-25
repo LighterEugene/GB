@@ -53,7 +53,7 @@ class HW4Lesson extends JFrame implements ActionListener {
      *
      * Выполнение событий из поля сообщения и кнопки ввода
      */
-    @Override///
+    @Override////
     public void actionPerformed(ActionEvent event) {
         if (message.getText().trim().length() > 0) {
             dialogue.append(message.getText() + "\n");
