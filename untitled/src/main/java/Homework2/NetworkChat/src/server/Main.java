@@ -4,8 +4,9 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Vector;
-
-class Main {
+import javafx.application.Application;
+import javafx.stage.Stage;
+public class Main {
     private Vector<ClientHandler> clients;
 
     Main() {

@@ -1,7 +1,8 @@
 package Homework2.NetworkChat.src.server;
 
 import java.sql.*;
-
+import javafx.application.Application;
+import javafx.stage.Stage;
 public class AuthService {
     private static Connection connection;
     private static Statement stmt;

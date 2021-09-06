@@ -4,8 +4,9 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-
-class ClientHandler {
+import javafx.application.Application;
+import javafx.stage.Stage;
+public class ClientHandler {
 
     private Socket socket;
     private DataInputStream in;
